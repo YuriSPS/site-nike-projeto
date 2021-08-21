@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#header {
+    height: 10vh;
+    background: #1f2229;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.nav-menu {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-logo img{
+    width: 120px;
+}
+
+.nav-list img {
+    width: 25px;
+    margin-left: 30px;
+}
+
+/* Menu Toggle */
+.menu-toggle-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #ff1901;
+    z-index: 1000;
+    animation: animeNavList .7s forwards;
+}
+
+.menu-toggle-list.active {
+    display: flex;
+}
+
+.menu-toggle-link {
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menu-toggle-link:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.btnClose {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    border: none;
+}
+
+@keyframes animeNavList {
+    from {
+        opacity: 0;
+        transform: translate3d(30px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/* Div Nike */
+.div-nike {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 600px;
+}
+
+.info h2 {
+    color: #fff;
+    font-size: 5em;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.nike-description {
+    padding-top: 20px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.price-nike {
+    font-size:2.7em;
+    padding: 90px 0 30px;
+    color: #fff;
+}
+
+.btn-buy-nike {
+    background: #ff1901;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 16px 40px;
+}
+
+.img-info {
+    width: 600px;
+}
+
+.img-info h2{
+    color: #fff;
+    opacity: .4;
+    font-size: 9em;
+    line-height: 100px;
+    margin-left: 100px;
+    text-transform: uppercase;
+}
+
+.nike-main {
+    width: 800px;
+    margin-top: -70px;
+    transform: rotate(-20deg);
+}
+
+.nikeshoes-list {
+    position: absolute;
+    left: 50%;
+    transform: translate(+20%);
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.nikeshoes-list li{
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nikeshoes-list li:hover{
+    transition: .7s;
+    transform: translateY(-15px);
+}
+
+.bg-violet {
+    background: #97a5d1;
+}
+
+.bg-green-clean {
+    background: #6bbaab;
+}
+
+.bg-red-clean {
+    background: #d16052
+}
+
+.bg-green {
+    background: #7cc575;
+}
+
+.nikeshoes-list img {
+    width: 150px;
+    transform: rotate(-10deg);
+}
+
+/* Section Home */
+#home {
+    height: 90vh;
+    display: flex;
+}
+
+.nike-info {
+    width: 50%;
+    background: #1f2229;
+}
+
+.nike-shoes {
+    width: 50%;
+    background: #ff1901;
+}
